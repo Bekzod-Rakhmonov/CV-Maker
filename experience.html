@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.min.js"></script>
+    <link rel="stylesheet" href="Styles/experience.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Experience</h2>
+
+        <div class="section">
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Describe yourself..."></textarea>
+        </div>
+
+        <div class="section" id="workExperienceSection">
+            <h3>Work Experience</h3>
+            <div id="workExperienceList"></div>
+            <button onclick="addWorkExperience()">Add Work Experience</button>
+        </div>
+
+        <div class="section" id="educationSection">
+            <h3>Education</h3>
+            <div id="educationList"></div>
+            <button onclick="addEducation()">Add Education</button>
+        </div>
+
+        <div class="section">
+            <h3>Skills</h3>
+            <div id="skillsList"></div>
+            <button onclick="addSkill()">Add Skill</button>
+        </div>
+
+        <div class="section">
+            <h3>Hobbies</h3>
+            <div id="hobbies"></div>
+            <button onclick="addHobby()">Add Hobby</button>
+        </div>
+        
+        <button onclick="saveExperience()">Save and Continue</button>
+    </div>
+
+    <script src="Scripts/experience.js"></script>
+</body>
+</html>

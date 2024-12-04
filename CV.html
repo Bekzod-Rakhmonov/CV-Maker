@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Preview</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="Styles/cv.css">
+</head>
+<body>
+    <div id="cv" class="cv-container">
+        <img id="photoDisplay" class="profile-photo hidden" alt="Profile Photo" />
+        <h1 id="fullName">Full Name</h1>
+        
+        <section class="personal-info section">
+            <h2 class="personal-header"> Personal <span class="date">Date of Birth: <span id="dob">N/A</span></span></h2>
+            <p><strong>Phone number:</strong> <span id="phoneNumber">N/A</span></p>
+            <p><strong>Email:</strong> <span id="email">N/A</span></p>
+            <p><strong>Gender:</strong> <span id="gender">N/A</span></p>
+            <a id="linkedinLink" class="hidden" href="#" target="_blank"></a>
+            <a id="websiteLink" class="hidden" href="#" target="_blank"></a>
+        </section>
+
+        <section class="objective section">
+            <h2><i class="icon">📄</i> Resume Objective</h2>
+            <p id="resumeObjective">N/A</p>
+        </section>
+
+        <section id="work-experience-section" class="work-experience section hidden">
+            <h2><i class="icon">💼</i> Work Experience</h2>
+            <div id="workExperience"></div>
+        </section>
+        
+        <section id="education-section" class="education section hidden">
+            <h2><i class="icon">🎓</i> Education and Qualifications</h2>
+            <div id="education"></div>
+        </section>
+
+        <section id="interests-section" class="interests section hidden">
+            <h2><i class="icon">🎯</i> Interests</h2>
+            <ul id="interestsList"></ul>
+        </section>
+
+        <section id="skills-section" class="skills section hidden">
+            <h2><i class="icon">🔧</i> Skills</h2>
+            <ul id="skillsList"></ul>
+        </section>
+    </div>
+
+    <button id="downloadPDF" class="download-button">Download PDF</button>
+
+    <script src="Scripts/cv.js"></script>
+</body>
+</html>

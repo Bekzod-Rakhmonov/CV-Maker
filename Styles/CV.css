@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+@media print {
+    #cv {
+        width: 210mm;
+        height: 297mm;
+    }
+}
+
+a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.cv-container {
+    width: 210mm;
+    height: 297mm;
+    margin: 20mm auto;
+    background: white;
+    padding: 20mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.section {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.personal-header {
+    justify-content: space-between;
+}
+
+h2 .icon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: black;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+}
+
+p, span, li {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.work-experience div,
+.education div {
+    margin-bottom: 10px;
+}
+
+.work-experience div h3, 
+.education div h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background: #0056b3;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    object-fit: cover;
+    margin-right: 20px;
+    display: block;
+}
